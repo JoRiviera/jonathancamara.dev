@@ -38,21 +38,20 @@ a {
 
 .code,
 code {
-  @apply px-1 text-sm bg-gray-300 rounded-lg mr-2 my-1 font-mono inline-block;
+  @apply px-1 text-sm rounded-lg mr-2 my-1 font-mono inline-block;
 }
 
 body {
-  @apply antialiased text-base text-gray-900 border-gray-800 border-t-8 pt-8 font-sans bg-gray-100;
+  @apply antialiased;
 }
-
-
-
   @tailwind utilities;
 </style>
 
 <svelte:head>
   <!-- <link rel="stylesheet" href="/style.css" /> -->
 </svelte:head>
-<div class="md:container md:mx-auto" data-theme="dark">
-  {@html templateHtml}
-</div>
+<body class='md:container md:mx-auto' data-theme="fantasy">
+  <div class="bg-base-200">
+    {@html templateHtml}
+  </div>
+</body>
