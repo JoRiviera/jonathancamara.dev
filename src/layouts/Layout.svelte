@@ -50,8 +50,8 @@ body {
 <svelte:head>
   <!-- <link rel="stylesheet" href="/style.css" /> -->
 </svelte:head>
-<body class='md:container md:mx-auto' data-theme="fantasy">
-  <div class="bg-base-200">
+<body class='container md:mx-auto' data-theme="fantasy">
+  <div class="lg:max-width-md p-3 md:w-4/5 lg:w-3/5 mx-auto bg-base-200 text-base-content">
     {@html templateHtml}
   </div>
 </body>

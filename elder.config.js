@@ -20,10 +20,17 @@ module.exports = {
   plugins: {
     '@elderjs/plugin-markdown': {
       routes: ['blog'],
+      useSyntaxHighlighting: {
+        theme: 'material-theme-darker',
+      },
     },
     '@elderjs/plugin-browser-reload': {
       // this reloads your browser when nodemon restarts your server.
       port: 8080,
+    },
+    '@elderjs/plugin-seo-check': {
+      display: ['errors', 'warnings'], // If the errors are too verbose remove 'warnings'
+      //writeLocation: './report.json', // if you want to write a report of errors
     },
   },
   shortcodes: { closePattern: '}}', openPattern: '{{' },
