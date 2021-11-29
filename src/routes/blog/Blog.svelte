@@ -8,13 +8,7 @@
   <meta name="description" content={frontmatter.excerpt} />
   <link href="{settings.origin}{request.permalink}" rel="canonical" />
 </svelte:head>
-<nav class="navbar">
-  <div class="navbar-start"></div>
-  <div class="navbar-center">
-    <a href="/">&LeftArrow; Home</a>
-  </div>
-  <div class="navbar-end"></div>
-</nav>
+
 
 
 

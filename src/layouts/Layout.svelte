@@ -50,8 +50,19 @@ body {
 <svelte:head>
   <!-- <link rel="stylesheet" href="/style.css" /> -->
 </svelte:head>
-<body class='container md:mx-auto' data-theme="fantasy">
-  <div class="lg:max-width-md p-3 md:w-4/5 lg:w-3/5 mx-auto bg-base-200 text-base-content">
-    {@html templateHtml}
+
+<body class='container' data-theme="fantasy">
+  <div class='bg-base-300'>
+    <div class="lg:max-width-md p-3 md:w-4/5 lg:w-3/5 mx-auto bg-base-100 text-base-content">
+      <nav class="navbar">
+        <div class="navbar-start"></div>
+        <div class="navbar-center">
+          <a href="/">&LeftArrow; Home</a>
+        </div>
+        <div class="navbar-end"></div>
+      </nav>
+      {@html templateHtml}
+    </div>
   </div>
 </body>
+
