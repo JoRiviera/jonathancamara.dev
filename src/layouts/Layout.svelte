@@ -49,7 +49,7 @@
   @tailwind utilities;
 
   nav a, nav a:visited {
-    @apply text-base-secondary;
+    @apply text-base-content;
     text-decoration: none;
   }
 
@@ -57,8 +57,13 @@
     @apply text-accent link link-hover;
   }
 
+  nav .site-logo > a {
+    @apply text-primary;
+    text-decoration: none;
+  }
+
   nav .site-logo > a:hover {
-    @apply text-info;
+    @apply text-primary-focus;
     text-decoration: none;
   }
 
