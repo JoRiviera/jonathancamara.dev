@@ -3,23 +3,23 @@
   const { html, frontmatter } = data;
 </script>
 
+<style>
+</style>
+
 <svelte:head>
   <title>{frontmatter.title}</title>
   <meta name="description" content={frontmatter.excerpt} />
   <link href="{settings.origin}{request.permalink}" rel="canonical" />
 </svelte:head>
 
-
-
-
-<article>
+<article class="prose">
   <header>
     <h1>{frontmatter.title}</h1>
     <div class="flex-col justify-end">
       {#if frontmatter.author && frontmatter.date}
         <small class="block self-end">
           par <strong>{frontmatter.author}</strong>, publié le
-          <em>{(new Date(frontmatter.date)).toLocaleString()}</em>
+          <em>{new Date(frontmatter.date).toLocaleString()}</em>
         </small>
       {/if}
       <div class="w-full inline-flex">
@@ -38,7 +38,3 @@
     {/if}
   </main>
 </article>
-
-<style>
-
-</style>
