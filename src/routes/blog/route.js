@@ -1,6 +1,8 @@
 module.exports = {
   template: 'Blog.svelte',
-  data: {},
-  all: () => [],
-  permalink: '/blog/:slug/',
+  all: () => [{ slug: '/blog/' }],
+  permalink: '/blog/',
+  data: ({ data }) => {
+    return data;
+  },
 };

@@ -19,7 +19,7 @@ module.exports = {
   },
   plugins: {
     '@elderjs/plugin-markdown': {
-      routes: ['blog'],
+      routes: ['posts'],
       useSyntaxHighlighting: {
         theme: 'material-theme-darker',
       },
