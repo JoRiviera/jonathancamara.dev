@@ -75,8 +75,7 @@
 
 <body class="container" data-theme="fantasy">
   <div class="bg-base-300">
-    <div class="lg:max-width-md
-      p-3 md:w-4/5 lg:w-3/5 mx-auto
+    <div class="max-w-screen-lg mx-auto p-3
       bg-base-100 text-base-content">
       <nav class="navbar w-full inline-flex justify-between">
         <div class="site-logo">
