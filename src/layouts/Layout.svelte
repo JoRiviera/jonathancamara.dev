@@ -1,6 +1,6 @@
 <script>
   import Icon from '../components/Icon.svelte';
-  import { mdiHome, mdiHeart } from '@mdi/js';
+  import { mdiHome, mdiHeart, mdiLinkedin, mdiTwitter} from '@mdi/js';
   export let templateHtml, settings;
 </script>
 
@@ -107,7 +107,29 @@
           </ul>
         </div>
       </nav>
-      {@html templateHtml}
+
+      <div>
+        {@html templateHtml}
+      </div>
+
+      <footer>
+        <nav>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/camarajonathan" class="inline-flex gap-1 items-center">
+                <Icon path="{mdiLinkedin}" />
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/joriviera" class="inline-flex gap-1 items-center">
+                <Icon path="{mdiTwitter}" />
+                <span>Twitter</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
     </div>
   </div>
 </body>
