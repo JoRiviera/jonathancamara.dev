@@ -77,6 +77,7 @@
   <div class="bg-base-300">
     <div class="max-w-screen-lg mx-auto
       min-h-screen
+      flex flex-col justify-between
       p-3
       bg-base-100 text-base-content">
       <nav class="navbar w-full inline-flex justify-between">
@@ -108,9 +109,9 @@
         </div>
       </nav>
 
-      <div>
+      <main class="flex flex-col flex-grow justify-start">
         {@html templateHtml}
-      </div>
+      </main>
 
       <footer>
         <nav>
