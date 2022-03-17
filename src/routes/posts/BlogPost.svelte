@@ -12,6 +12,13 @@
   <link href="{settings.origin}{request.permalink}" rel="canonical" />
 </svelte:head>
 
+<div class="text-sm breadcrumbs">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/blog">Blog</a></li>
+  </ul>
+</div>
+
 <article class="mx-4 mt-6">
   <header>
     <h1>{frontmatter.title}</h1>
