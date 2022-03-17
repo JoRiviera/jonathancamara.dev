@@ -12,7 +12,7 @@
   <link href="{settings.origin}{request.permalink}" rel="canonical" />
 </svelte:head>
 
-<article class="prose">
+<article class="mx-4 mt-6">
   <header>
     <h1>{frontmatter.title}</h1>
     <div class="flex-col justify-end">
@@ -30,7 +30,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="prose">
     {#if html}
       {@html html}
     {:else}
