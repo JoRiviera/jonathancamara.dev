@@ -113,23 +113,23 @@
         {@html templateHtml}
       </main>
 
-      <footer>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/camarajonathan" class="inline-flex gap-1 items-center">
-                <Icon path="{mdiLinkedin}" />
-                <span>LinkedIn</span>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.twitter.com/joriviera" class="inline-flex gap-1 items-center">
-                <Icon path="{mdiTwitter}" />
-                <span>Twitter</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
+      <footer class="
+          text-neutral-focus footer footer-center pt-6 pb-12">
+        <ul>
+          <li class="footer-title">Connectons nous!</li>
+          <li>
+            <a href="https://www.linkedin.com/camarajonathan" class="link link-hover inline-flex gap-1 items-center">
+              <Icon path="{mdiLinkedin}" />
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/joriviera" class="link link-hover inline-flex gap-1 items-center">
+              <Icon path="{mdiTwitter}" />
+              <span>Twitter</span>
+            </a>
+          </li>
+        </ul>
       </footer>
     </div>
   </div>
