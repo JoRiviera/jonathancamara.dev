@@ -4,13 +4,18 @@
   export let company, domain, size, contract, title, start, end, missions, remote, stack, links;
 </script>
 
-<div class="card w-full shadow-xl flex flex-col justify-center gap-3 my-4 py-4 px-2 bg-base-200 prose">
+<div class="card w-full shadow-xl flex flex-col justify-center gap-2 my-4 py-4 px-2 bg-base-200 prose">
 
   <h2 class="text-center">{title}</h2>
-  <p>
-    <strong>{company}</strong> (<em>{domain}</em>)<br>
-    {contract} {end ? 'from' : 'since'} {start} {end ? 'to ' + end : '(current position)' }<br>
-  </p>
+  <div>
+    <p class="text-secondary">
+      <strong>{company}</strong> (<em>{domain}</em>)
+    </p>
+    <p>
+      {contract} {end ? 'from' : 'since'} {start} {end ? 'to ' + end : '(current position)' }<br>
+    </p>
+  </div>
+
   <div class="flex flex-line justify-around">
     <div class="flex flex-line gap-2 items-center ">
       <Icon path="{mdiAccountGroup}" title="Company size"/>
@@ -45,24 +50,33 @@
 
 <!--  TODO -->
   <div class="max-h-sm m-auto">
-    <a class="btn btn-outline btn-primary btn-active btn-sm gap-2 m-auto text-primary-content">
+    <a class="inline-flex link gap-2 m-auto">
       Read more about this experience <Icon size="1.3em" path={mdiChevronRight} />
     </a>
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   * {
     font: inherit;
+  }
+
+  h2 {
+    @apply text-primary
   }
 
   h2 > p > strong {
     font-size: larger;
   }
 
-  .btn {
-      text-decoration: none;
+  a.link {
+    @apply text-lg ;
   }
+
+  a.link:hover {
+    @apply text-accent;
+  }
+
 
   .card {
     top: 0;
