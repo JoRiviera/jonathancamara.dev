@@ -15,7 +15,7 @@
         Fullstack <strong>Javascript</strong> and
         <strong>Typescript</strong> Developer
       </h2>
-      <p>... and design maniac, end-user and domain driven, loving the craft.</p>
+      <p class="prose">... and design maniac, end-user and domain driven, loving the craft.</p>
       <div class="inline-flex place-content-evenly">
         <button class="btn btn-lg btn-primary m-2">See my resume</button>
         <button class="btn btn-lg btn-accent m-2">Hire me</button>
