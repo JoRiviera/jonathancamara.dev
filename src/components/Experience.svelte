@@ -70,11 +70,11 @@
   }
 
   a.link {
-    @apply text-lg ;
+    @apply text-lg text-accent;
   }
 
   a.link:hover {
-    @apply text-accent;
+    @apply text-accent-focus;
   }
 
 
