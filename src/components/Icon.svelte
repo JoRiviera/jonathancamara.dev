@@ -30,6 +30,7 @@
 
   export let stroke;
 
+  export let scale = 1;
   // Accessibility
   export let title = '';
   export let desc = '';
@@ -46,7 +47,7 @@
   }
 </style>
 
-<i aria-hidden="true" class={klass} class:is-spinning={spin} class:icon-disabled={disabled} style="font-size:{size};">
+<div aria-hidden="true" class={klass} class:is-spinning={spin} class:icon-disabled={disabled} style="font-size:{size};">
   {#if path}
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -54,9 +55,11 @@
       height={size}
       {viewBox}
       style="fill: {fillColor || 'currentColor'};
-          stroke: {stroke || 'currentColor'};"
+          stroke: {stroke || 'currentColor'};
+          scale: {scale};"
       aria-labelledby="{titleId} {descId}"
       role = "img"
+      preserveAspectRatio="xMidYMid meet"
     >
       {#if title}
         <title id="{titleId}">{title}</title>
@@ -68,4 +71,4 @@
     </svg>
   {/if}
   <slot />
-</i>
+</div>
