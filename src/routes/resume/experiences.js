@@ -20,7 +20,7 @@ module.exports = [
     remote: '75%',
     stack: [
       ['Javascript', 'Distributed architecture', 'NodeJs', 'ExpressJs', 'MongoDB', 'BeeQueue'],
-      ['Bash', 'Kubernetes'],
+      ['Docker', 'Kubernetes'],
       ['Google Cloud Platform', 'MongoDB Atlas'],
       ['PHP', 'Laravel', 'LivewireUI'],
     ],

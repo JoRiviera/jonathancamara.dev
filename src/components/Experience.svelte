@@ -7,16 +7,17 @@
 <div class="card w-full shadow-xl flex flex-col justify-center gap-2 my-4 py-4 px-2 bg-base-200 prose">
 
   <h2 class="text-center">{title}</h2>
-  <div>
+  <header class="flex flex-col gap-1">
     <p class="text-secondary">
       <strong>{company}</strong> (<em>{domain}</em>)
     </p>
     <p>
       {contract} {end ? 'from' : 'since'} {start} {end ? 'to ' + end : '(current position)' }<br>
     </p>
-  </div>
+    <p>Remote: {remote}</p>
+  </header>
 
-  <div class="flex flex-line justify-around">
+  <div class="flex flex-line gap-2">
     <div class="flex flex-line gap-2 items-center ">
       <Icon path="{mdiAccountGroup}" title="Company size"/>
       <span>Company Size:</span>
@@ -62,11 +63,17 @@
   }
 
   h2 {
-    @apply text-primary
+    @apply text-primary text-2xl;
+    font-weight: bold;
   }
 
-  h2 > p > strong {
+  header > p {
+      margin: 0;
+  }
+
+  header > p > strong {
     font-size: larger;
+    font-weight: bold;
   }
 
   a.link {
