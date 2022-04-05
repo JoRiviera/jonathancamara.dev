@@ -1,21 +1,27 @@
+const mdi = require('@mdi/js');
+const svgs = require('../../svgs/');
+
 module.exports = {
   language: [
     {
       title: 'Javascript',
       level: 'Ninja',
       note: 'This is my mother tongue, though I like to learn and try others, but I always come home.',
+      iconPath: mdi.mdiLanguageJavascript,
     },
     {
       title: 'Typescript',
       level: 'Experienced',
       note: 'The non material equivalent of coding on a couch.',
+      iconPath: mdi.mdiLanguageTypescript,
     },
   ],
   'front-end': [
     {
       title: 'Svelte',
       level: 'Jedi',
-      note: 'The holy trinity of the web is back.',
+      note: 'The holy web trinity is back.',
+      iconPath: svgs.svelte,
     },
     {
       title: 'SvelteKit',

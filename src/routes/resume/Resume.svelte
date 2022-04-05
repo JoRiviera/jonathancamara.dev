@@ -16,7 +16,7 @@
 <h2>Skill Set</h2>
 {#each Object.keys(skills) as skillcategory}
   <h3>{skillcategory.toUpperCase()}</h3>
-  <div class="grid grid-flow-row grid-cols-2">
+  <div class="grid grid-flow-row grid-cols-2 gap-3">
     {#each skills[skillcategory] as skill}
       <Skill {...skill}/>
     {/each}
